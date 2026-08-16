@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniqueArt — Style Guide (dev only)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+  <div class="container" style="padding-block: var(--space-16);">
+
+    <h1>UniqueArt Design System</h1>
+    <p class="text-muted" style="margin-bottom: var(--space-16);">Página de teste — não faz parte do site final.</p>
+
+    <!-- CORES -->
+    <section style="margin-bottom: var(--space-16);">
+      <h2>Cores</h2>
+      <div style="display:flex; gap: var(--space-4); flex-wrap: wrap; margin-top: var(--space-6);">
+        <div style="width:120px;">
+          <div style="height:80px; background:var(--color-primary); border-radius: var(--radius-sm);"></div>
+          <p class="text-muted" style="font-size: var(--text-xs);">primary</p>
+        </div>
+        <div style="width:120px;">
+          <div style="height:80px; background:var(--color-black); border-radius: var(--radius-sm);"></div>
+          <p class="text-muted" style="font-size: var(--text-xs);">black</p>
+        </div>
+        <div style="width:120px;">
+          <div style="height:80px; background:var(--color-gold); border-radius: var(--radius-sm);"></div>
+          <p class="text-muted" style="font-size: var(--text-xs);">gold</p>
+        </div>
+        <div style="width:120px;">
+          <div style="height:80px; background:var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-sm);"></div>
+          <p class="text-muted" style="font-size: var(--text-xs);">surface</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIPOGRAFIA -->
+    <section style="margin-bottom: var(--space-16);">
+      <h2>Tipografia</h2>
+      <h1>Presenteie com Amor</h1>
+      <h2>Título de Secção</h2>
+      <h3>Subtítulo de Categoria</h3>
+      <p>Corpo de texto — Somos uma empresa especializada em transformar momentos especiais em memórias inesquecíveis.</p>
+    </section>
+
+    <!-- BOTÕES -->
+    <section style="margin-bottom: var(--space-16);">
+      <h2>Botões</h2>
+      <div style="display:flex; gap: var(--space-4); margin-top: var(--space-6); flex-wrap:wrap;">
+        <button class="btn btn--primary">Ver Catálogo</button>
+        <button class="btn btn--secondary">Pedir Orçamento</button>
+        <button class="btn btn--gold">Falar no WhatsApp</button>
+        <button class="btn btn--primary" disabled>Indisponível</button>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section style="margin-bottom: var(--space-16);">
+      <h2>Card de Produto</h2>
+      <div style="max-width: 320px; margin-top: var(--space-6);">
+        <div class="card">
+          <img class="card__image" src="assets/images/products/shadow-box/shadow-box-01.jpg" alt="Shadow Box personalizada">
+          <div class="card__body">
+            <span class="badge badge--gold">Mais vendido</span>
+            <h3 class="card__title" style="margin-top: var(--space-2);">Shadow Box Personalizada</h3>
+            <p class="card__price">Desde 1.550 MT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section class="section--dark" style="padding: var(--space-8); border-radius: var(--radius-md);">
+      <h2>Campo de Formulário (sobre fundo preto)</h2>
+      <div class="field" style="max-width: 400px; margin-top: var(--space-6);">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="O teu nome">
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
