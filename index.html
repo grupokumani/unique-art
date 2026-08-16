@@ -4,20 +4,149 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UniqueArt — Presentes Personalizados em Maputo</title>
+  <meta name="description" content="Papelaria criativa, brindes e presentes personalizados em Maputo. Shadow boxes, encanto box, bouquets, chaveiros, camisetas e muito mais — feitos à tua medida.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/variables.css">
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
 </head>
 <body>
 
   <div data-include="header"></div>
 
-  <main class="container" style="padding-block: var(--space-24);">
-    <h1>Header + Navegação — teste da Fase 3</h1>
-    <p class="text-muted">Esta página é só para validar o header, o menu mobile e o footer. A homepage real vem na Fase 4.</p>
+  <main>
+
+    <!-- HERO FULL SCREEN -->
+    <section class="hero">
+      <video
+        class="hero__media"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="/assets/images/hero/hero-poster.jpg">
+        <source src="/assets/images/hero/hero-video.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+        <span class="hero__eyebrow">Presentes Personalizados · Maputo</span>
+        <h1 class="hero__title">Cada presente conta uma história única.</h1>
+        <p class="hero__subtitle">Papelaria criativa, brindes e produtos personalizados feitos à mão, com atenção a cada detalhe — para tornar cada momento inesquecível.</p>
+        <div class="hero__actions">
+          <a href="/loja/" class="btn btn--gold">Ver Catálogo</a>
+          <a href="https://wa.me/258833044410" class="btn btn--secondary" style="border-color:#fff; color:#fff;" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll">Desliza</div>
+    </section>
+
+    <!-- BANNER DE AVISO -->
+    <div class="notice-bar">
+      <p>Encomendas feitas com pelo menos <span>3 dias de antecedência</span> · Segunda a Sábado, 08:00–17:00</p>
+    </div>
+
+    <!-- QUEM SOMOS -->
+    <section class="section">
+      <div class="container about-strip">
+        <span class="badge badge--gold">Quem Somos</span>
+        <h2>Transformamos momentos especiais em memórias inesquecíveis</h2>
+        <p>Acreditamos que cada presente deve contar uma história única. Criamos peças personalizadas com atenção a cada detalhe e um toque de exclusividade — para surpreender e encantar em todas as ocasiões.</p>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-heading">
+          <span class="badge">Categorias</span>
+          <h2>Explora o nosso mundo de ARTS</h2>
+        </div>
+
+        <div class="category-grid">
+          <a href="/produtos/caixa-personalisada.html" class="category-card">
+            <img src="/assets/images/categories/caixa-personalisada.jpg" alt="Caixas personalizadas ao seu gosto">
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Shadow Box</span>
+          </a>
+
+          <a href="/produtos/quadros-personalisados.html" class="category-card">
+            <img src="/assets/images/categories/quadros-personalisados.jpg" alt="Quadros personalisados decorados com flores de papel">
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">LetterBox</span>
+          </a>
+
+          <a href="/produtos/bouquets.html" class="category-card">
+            <img src="/assets/images/categories/bouquets.jpg" alt="Bouquet personalizado criativo">
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Bouquets</span>
+          </a>
+
+          <a href="/produtos/chaveiros-acrilico.html" class="category-card">
+            <img src="/assets/images/categories/chaveiros-acrilico.jpg" alt="Chaveiros de acrílico personalizados">
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Chaveiros &amp; Acrílico</span>
+          </a>
+
+          <a href="/produtos/camisetas-personalizadas.html" class="category-card">
+            <img src="/assets/images/categories/estampagem.jpg" alt="Camisetas personalizadas com estampagem">
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Camisetas</span>
+          </a>
+
+          <a href="/produtos/papelaria.html" class="category-card">
+            <img src="/assets/images/categories/papelaria.jpg" alt="Agendas, cadernos e planners personalizados">
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Papelaria</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-heading">
+          <span class="badge badge--gold">Como Funciona</span>
+          <h2>Do pedido ao presente, em 3 passos</h2>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step__number">1</span>
+            <h3>Escolhe o produto</h3>
+            <p>Explora o catálogo ou fala connosco no WhatsApp para nos contares a tua ideia.</p>
+          </div>
+          <div class="step">
+            <span class="step__number">2</span>
+            <h3>Personaliza</h3>
+            <p>Nomes, cores, mensagens — cada peça é feita à tua medida e ao teu gosto.</p>
+          </div>
+          <div class="step">
+            <span class="step__number">3</span>
+            <h3>Recebe com amor</h3>
+            <p>Preparamos com pelo menos 3 dias de antecedência e entregamos pronto a presentear.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+      <div class="container">
+        <span class="badge badge--gold" style="margin-bottom: var(--space-4);">Pronta para começar?</span>
+        <h2>Vamos criar algo único para ti.</h2>
+        <div style="margin-top: var(--space-8);">
+          <a href="/loja/" class="btn btn--primary">Ver Catálogo</a>
+          <a href="/personalizar/" class="btn btn--secondary">Pedir Orçamento</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <div data-include="footer"></div>
