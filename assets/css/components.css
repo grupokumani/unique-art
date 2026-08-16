@@ -56,12 +56,12 @@
 }
 
 /* Accent — dourado (CTA especial, ex: WhatsApp) */
-.btn--gold {
-  background-color: var(--color-gold);
+.btn--pink {
+  background-color: var(--color-primary);
   color: var(--color-black);
 }
-.btn--gold:hover {
-  background-color: var(--color-gold-light);
+.btn--pink:hover {
+  background-color: var(--color-primary-soft);
   box-shadow: var(--shadow-md);
 }
 
@@ -97,7 +97,7 @@
 }
 
 .card__price {
-  color: var(--color-gold);
+  color: var(--color-primary);
   font-weight: 600;
   font-size: var(--text-sm);
 }
@@ -116,7 +116,7 @@
 }
 
 .badge--gold {
-  background-color: var(--color-gold);
+  background-color: var(--color-primary);
   color: var(--color-black);
 }
 
@@ -149,7 +149,7 @@
 .field input:focus,
 .field textarea:focus,
 .field select:focus {
-  border-color: var(--color-gold);
+  border-color: var(--color-primary);
   outline: none;
 }
 

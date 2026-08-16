@@ -45,7 +45,7 @@
   bottom: -2px;
   width: 0;
   height: 1.5px;
-  background-color: var(--color-gold);
+  background-color: var(--color-primary);
   transition: width var(--transition-fast);
 }
 
@@ -70,7 +70,7 @@
   position: absolute;
   top: -8px;
   right: -10px;
-  background-color: var(--color-gold);
+  background-color: var(--color-primary);
   color: var(--color-black);
   font-size: 10px;
   font-weight: 700;
@@ -169,7 +169,7 @@
 }
 
 .site-footer a:hover {
-  color: var(--color-gold-light);
+  color: var(--color-primary-soft);
 }
 
 .site-footer__bottom {
