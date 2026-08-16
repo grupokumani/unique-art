@@ -75,3 +75,6 @@ img {
 .section--dark h1, .section--dark h2, .section--dark h3 {
   color: var(--color-text-inverse);
 }
+.section--tint {
+  background-color: var(--color-primary-light);
+}

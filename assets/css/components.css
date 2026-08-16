@@ -107,17 +107,12 @@
   display: inline-block;
   padding: var(--space-1) var(--space-3);
   border-radius: var(--radius-full);
-  background-color: var(--color-surface);
-  color: var(--color-black);
+  background-color: var(--color-black);
+  color: var(--color-text-inverse);
   font-size: var(--text-xs);
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-}
-
-.badge--gold {
-  background-color: var(--color-primary);
-  color: var(--color-black);
 }
 
 /* --- Inputs --- */

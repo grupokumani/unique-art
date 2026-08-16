@@ -183,8 +183,9 @@
   width: 48px;
   height: 48px;
   border-radius: var(--radius-full);
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
+  border: 1px solid var(--color-black);
+  background-color: #FFFFFF;
+  color: var(--color-black);
   font-family: var(--font-heading);
   font-size: var(--text-xl);
   margin-bottom: var(--space-4);
@@ -229,4 +230,98 @@
 
 .section-heading .badge {
   margin-bottom: var(--space-4);
+}
+
+/* --- Testemunhos com fundo de imagens em movimento --- */
+.testimonials {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--space-24);
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-black);
+}
+
+.testimonials__track {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  opacity: 0.55;
+}
+
+.testimonials__track-inner {
+  display: flex;
+  gap: var(--space-4);
+  animation: scroll-left 40s linear infinite;
+}
+
+.testimonials__track-inner img {
+  width: 260px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonials__track-inner { animation: none; }
+}
+
+.testimonials__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(23,20,15,0.88) 0%,
+    rgba(23,20,15,0.72) 50%,
+    rgba(23,20,15,0.88) 100%
+  );
+}
+
+.testimonials__content {
+  position: relative;
+  z-index: 2;
+  color: var(--color-text-inverse);
+}
+
+.testimonials__content h2 {
+  color: var(--color-text-inverse);
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+
+.testimonial-card {
+  background-color: rgba(253, 251, 250, 0.06);
+  border: 1px solid rgba(253, 251, 250, 0.18);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  backdrop-filter: blur(2px);
+}
+
+.testimonial-card p {
+  color: rgba(253, 251, 250, 0.92);
+  font-style: italic;
+  margin-bottom: var(--space-4);
+}
+
+.testimonial-card__author {
+  color: var(--color-primary-soft);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .testimonials__grid { grid-template-columns: 1fr; }
 }
