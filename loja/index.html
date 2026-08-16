@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja — UniqueArt</title>
+  <meta name="description" content="Compra online produtos personalizados UniqueArt: shadow boxes, encanto box, bouquets, chaveiros, camisetas, papelaria e doces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="stylesheet" href="/assets/css/shop.css">
+</head>
+<body>
+
+  <div data-include="header"></div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="badge badge--gold">Loja</span>
+          <h1>Todos os Produtos</h1>
+          <p class="text-muted">Filtra por categoria ou explora tudo o que temos para ti.</p>
+        </div>
+
+        <div class="filter-tabs">
+          <button class="filter-tab filter-tab--active" data-filter-tab="all">Todos</button>
+          <button class="filter-tab" data-filter-tab="shadow-box">Caixas personalizadas</button>
+          <button class="filter-tab" data-filter-tab="encanto-box">Recipientes personalizados</button>
+          <button class="filter-tab" data-filter-tab="letterbox">Quadros Personalizados</button>
+          <button class="filter-tab" data-filter-tab="bouquets">Bouquets</button>
+          <button class="filter-tab" data-filter-tab="chaveiros-acrilico">Chaveiros &amp; Acrílico</button>
+          <button class="filter-tab" data-filter-tab="camisetas">Camisetas</button>
+          <button class="filter-tab" data-filter-tab="papelaria">Papelaria</button>
+          <button class="filter-tab" data-filter-tab="doces">Brindes/button>
+        </div>
+
+        <div class="product-grid" data-product-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="/assets/js/products-data.js"></script>
+  <script src="/assets/js/cart.js"></script>
+  <script src="/assets/js/catalog-render.js"></script>
+  <script src="/assets/js/include.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', initShopGrid);
+  </script>
+</body>
+</html>

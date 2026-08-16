@@ -13,6 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
 
+// --- Sincronização do carrinho com o ícone no header ---
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.addEventListener('include:loaded', (e) => {
+    if (e.detail.name === 'header' && typeof getCartCount === 'function') {
+      updateCartCount(getCartCount());
+    }
+  });
+});
+
+window.addEventListener('cart:updated', () => {
+  if (typeof getCartCount === 'function') updateCartCount(getCartCount());
+});
+
 function initMobileMenu() {
   const toggle = document.getElementById('menu-toggle');
   const nav = document.getElementById('site-nav');

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow Box Personalizada — UniqueArt</title>
+  <meta name="description" content="Caixas personalizadas com rosas de papel, frases e versículos à tua escolha. Feitas à mão em Maputo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="stylesheet" href="/assets/css/shop.css">
+</head>
+<body>
+
+  <div data-include="header"></div>
+
+  <main>
+    <section class="category-hero">
+      <img src="/assets/images/categories/caixa-personalizada.jpg" alt="Caixa personalizada">
+      <div class="category-hero__overlay"></div>
+      <div class="container category-hero__content">
+        <span class="hero__eyebrow">Categoria</span>
+        <h1>Shadow Box</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="text-muted" style="max-width: 600px;">Molduras com rosas de papel artesanais, frases e versículos personalizados. Perfeitas para o Dia das Mães, aniversários ou como decoração especial.</p>
+
+        <div class="product-grid" data-product-grid data-category="shadow-box"></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="/assets/js/products-data.js"></script>
+  <script src="/assets/js/cart.js"></script>
+  <script src="/assets/js/catalog-render.js"></script>
+  <script src="/assets/js/include.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', initCategoryGrid);
+  </script>
+</body>
+</html>
